@@ -8,6 +8,8 @@
 
 :root {
   font-size: 62.5%;
+  --nav-heigth: 10rem;
+  --titles-h4: #243e63;
 }
 
 html {
@@ -25,8 +27,20 @@ img {
 }
 
 .wrapper {
-  width: 37.5rem;
+  width: min(50rem, 100%);
   margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+section header h4 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  color: var(--titles-h4);
 }
 
 /*HOME*/
@@ -34,13 +48,16 @@ img {
 #home::before {
   content: '';
   width: 100%;
-  height: 62.6rem;
-  background-color: aliceblue;
+  height: calc(130% + var(--nav-heigth));
+  background-color: rgb(212, 212, 221);
   display: block;
   position: absolute;
-  z-index: -1;
   top: 0;
   left: 0;
+  z-index: -1;
+}
+#home {
+  margin-top: var(--nav-heigth);
 }
 
 #home .content h1 {
@@ -80,21 +97,25 @@ img {
 #home button:hover {
   cursor: pointer;
 }
-
 #home img {
-  bottom: -22px;
+  margin-inline: auto;
+  user-select: none;
 }
-#home .stat {
-  background-color: rgb(255, 255, 255);
+
+.stat {
+  background-color: #ffe6e6;
   text-align: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
+  margin-top: -5px;
+  padding: 2rem;
+  border-radius: 0.5rem;
   width: 100%;
 }
 
 .stat h2 {
   margin-bottom: 1.5rem;
   text-transform: uppercase;
-  padding-top: 1rem;
+  padding-top: 5rem;
   color: #243e63;
 }
 
@@ -102,4 +123,37 @@ img {
   line-height: 2.3rem;
   color: #495057;
   margin-bottom: 2rem;
+}
+/*SERVICES*/
+
+#services {
+  margin-block: 5rem;
+}
+
+#services h2 {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card h3 {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--titles-h4);
+}
+
+.card img {
+  height: 40rem;
+  border-radius: 0.8rem;
 }
