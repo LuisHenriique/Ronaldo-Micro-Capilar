@@ -10,6 +10,7 @@
   font-size: 62.5%;
   --nav-heigth: 10rem;
   --titles-h4: #243e63;
+  --paragraph: #495057;
 }
 
 html {
@@ -48,8 +49,8 @@ section header h4 {
 #home::before {
   content: '';
   width: 100%;
-  height: calc(130% + var(--nav-heigth));
-  background-color: rgb(212, 212, 221);
+  height: 1000vh;
+  background-color: #d2cecf;
   display: block;
   position: absolute;
   top: 0;
@@ -72,7 +73,7 @@ section header h4 {
 #home .content p {
   text-align: center;
   margin-top: 5rem;
-  color: #495057;
+  color: var(--paragraph);
 }
 
 #home header button {
@@ -103,25 +104,23 @@ section header h4 {
 }
 
 .stat {
-  background-color: #ffe6e6;
+  background-color: #ffffff;
   text-align: center;
-  padding-top: 2rem;
-  margin-top: -5px;
-  padding: 2rem;
-  border-radius: 0.5rem;
+  margin-top: -4.03px;
+  padding-block: 4rem;
   width: 100%;
+  margin-inline: auto;
 }
 
 .stat h2 {
   margin-bottom: 1.5rem;
   text-transform: uppercase;
-  padding-top: 5rem;
   color: #243e63;
 }
 
 .stat p {
   line-height: 2.3rem;
-  color: #495057;
+  color: var(--paragraph);
   margin-bottom: 2rem;
 }
 /*SERVICES*/
@@ -149,10 +148,14 @@ section header h4 {
 }
 .card h3 {
   text-align: center;
-  margin-top: 1rem;
+  margin-block: 2rem;
   color: var(--titles-h4);
 }
-
+.card p {
+  text-align: center;
+  margin-inline: auto;
+  color: var(--paragraph);
+}
 .card img {
   height: 40rem;
   border-radius: 0.8rem;
