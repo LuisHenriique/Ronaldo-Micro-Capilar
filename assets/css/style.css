@@ -11,7 +11,7 @@
   --nav-heigth: 6rem;
   --titles-h4: #243e63;
   --paragraph: #495057;
-  --background-gray: #d2cecf;
+  --background-gray: #f3fbfe;
   --background-white: #ffffff;
   --blueGet: #00a3ac;
 }
@@ -52,6 +52,10 @@ section header h2 {
   text-align: center;
 }
 
+section {
+  margin-block: 5rem;
+}
+
 /*BACKGROUNDS*/
 .background:nth-child(1) {
   background-color: var(--background-gray);
@@ -78,7 +82,6 @@ section header h2 {
   line-height: 100%;
   margin-bottom: 2.4rem;
   text-align: center;
-  color: #ffffff;
 }
 
 #home .content p {
@@ -119,7 +122,7 @@ section header h2 {
   background-color: var(--background-white);
   text-align: center;
   margin-top: -4.03px;
-  padding-block: 6rem;
+  padding-top: 4.5rem;
   width: 100%;
   margin-inline: auto;
 }
@@ -137,35 +140,45 @@ section header h2 {
 }
 /*SERVICES*/
 
-#services {
-  margin-block: 5rem;
-}
-
 #services .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 3rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border: 1px solid #dce9e2;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+.card img {
+  height: 35rem;
+  border-radius: 0.8rem;
 }
 .card h3 {
-  text-align: center;
-  margin-block: 2rem;
+  text-align: left;
+  margin-block: 1rem;
   color: var(--titles-h4);
 }
 .card p {
-  text-align: center;
+  text-align: left;
   margin-inline: auto;
   color: var(--paragraph);
+  margin-bottom: 3rem;
 }
-.card img {
-  width: 40rem;
-  height: 40rem;
+
+.card .saibaMais {
+  border: 2px solid var(--blueGet);
+  background-color: var(--blueGet);
+  color: var(--background-white);
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 /*DEPOIMENTOS*/
