@@ -53,22 +53,29 @@ section header h2 {
 }
 
 section {
-  margin-block: 5rem;
+  margin-block: rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*BACKGROUNDS*/
-.background:nth-child(1) {
-  background-color: var(--background-gray);
-  padding-top: 2rem;
-}
-.background:nth-child(2) {
-  background-color: var(--background-white);
-}
-.background2 {
-  background-color: var(--background-gray);
+.background{
   padding-block: 3rem;
 }
 
+.one {
+  background-color: #d2cecf;
+  padding-top: 2rem;
+}
+
+.two {
+  background-color: var(--background-gray);
+}
+.three {
+  background-color: var(--background-white);
+}
 /*HOME*/
 
 #home {
@@ -119,10 +126,14 @@ section {
 }
 
 .stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--background-white);
   text-align: center;
   margin-top: -4.03px;
-  padding-top: 4.5rem;
+  padding-top: 5rem;
   width: 100%;
   margin-inline: auto;
 }
@@ -134,9 +145,8 @@ section {
 }
 
 .stat p {
-  line-height: 2.3rem;
+  line-height: 3.3rem;
   color: var(--paragraph);
-  margin-bottom: 2rem;
 }
 /*SERVICES*/
 
@@ -179,10 +189,19 @@ section {
   padding: 1rem;
   font-weight: bold;
   font-size: 1.5rem;
+  text-align: center;
+}
+
+.saibaMais:hover {
+  background-color: transparent;
+  color: var(--blueGet);
+  transition: 0.4s;
 }
 
 /*DEPOIMENTOS*/
-
+#depositions {
+  margin-top: 0;
+}
 .feedbacks {
   display: flex;
   flex-direction: column;
@@ -203,6 +222,7 @@ section {
   border-top: 10px solid var(--blueGet);
   box-shadow: 0px 0px 20px 0px rgb(223, 223, 223);
   line-height: 2.5rem;
+  color: var(--paragraph);
 }
 
 .feedback p span {
