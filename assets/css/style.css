@@ -61,8 +61,8 @@ a {
 }
 
 /*BACKGROUNDS*/
-.background{
-  padding-block: 3rem;
+.background {
+  padding-block: 5rem;
 }
 
 .one {
@@ -75,6 +75,10 @@ a {
 }
 .three {
   background-color: var(--background-white);
+}
+
+.four {
+  background-color: var(--background-gray);
 }
 /*HOME*/
 
@@ -123,6 +127,7 @@ a {
 #home img {
   margin-inline: auto;
   user-select: none;
+  object-position: 0px 0px;
 }
 
 .stat {
@@ -180,6 +185,8 @@ a {
   margin-inline: auto;
   color: var(--paragraph);
   margin-bottom: 3rem;
+  line-height: 150% ;
+
 }
 
 .card .saibaMais {
@@ -211,17 +218,17 @@ a {
 }
 
 .feedback {
-  width: 32rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding-inline: 2rem;
   padding-top: 2rem;
-  border-radius: 0.6rem;
-  border-top: 10px solid var(--blueGet);
+  border-radius: 0.8rem;
+  border-top: 15px solid var(--blueGet);
   box-shadow: 0px 0px 20px 0px rgb(223, 223, 223);
-  line-height: 2.5rem;
+  line-height: 150% ;
   color: var(--paragraph);
 }
 
@@ -238,4 +245,20 @@ a {
 .estrela img {
   object-position: 0px -20px;
   width: 8rem;
+}
+
+/*SOBRE*/
+
+#about .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#about .content p {
+  line-height: 150% ;
+}
+
+#about img {
+  border-radius: 0.8rem;
 }
