@@ -269,7 +269,6 @@ a {
   background-color: var(--background-white)
 }
 #localization .content .col-a {
-  text-align: center;
   line-height: 150%;
   color: var(--paragraph);
 }
