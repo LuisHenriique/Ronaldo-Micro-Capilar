@@ -312,11 +312,11 @@ a {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  color: var(--headline);
+  color: var(--paragraph);
 }
 
 #contact ul li a {
-  color: var(--headline);
+  color: var(--paragraph);
 }
 #contato .button {
 }
