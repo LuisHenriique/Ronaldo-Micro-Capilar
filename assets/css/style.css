@@ -318,8 +318,7 @@ a {
 #contact ul li a {
   color: var(--paragraph);
 }
-#contato .button {
-}
+
 .paragraphs {
   display: flex;
   justify-content: space-evenly;
@@ -330,4 +329,27 @@ iframe {
   height: 35rem;
   border-radius: 0.8rem;
   margin-bottom: 4rem;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: var(--blueGet);
+  padding-block: 6rem;
+  text-align: left;
+  color: white;
+}
+
+footer p {
+  line-height: 200%;
+  margin-bottom: 3rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 3.2rem;
+}
+
+footer ul li img {
+  width: 23px;
 }
