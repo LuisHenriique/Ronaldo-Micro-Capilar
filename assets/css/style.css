@@ -195,8 +195,7 @@ a {
   background-color: #ffffff;
 }
 
-.container{
-  
+.container {
 }
 .card h3 {
   text-align: left;
@@ -231,7 +230,7 @@ a {
 /*DEPOIMENTOS*/
 #depositions {
   margin-top: 0;
-  background-color: var(--background-gray);
+  background-color: var(--background-green);
 }
 .feedbacks {
   display: flex;
@@ -354,11 +353,11 @@ footer ul li img {
   width: 23px;
 }
 
-footer .logo{
+footer .logo {
   color: white;
   font-size: 3.5rem;
 }
 
-.logo span{
+.logo span {
   font-weight: bold;
 }
