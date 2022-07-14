@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ronaldo MicroCapilar</title>
-  <link rel="shortcut icon" href="./assets/images/icon/favicon-16x16.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./assets/images/icon//favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -108,7 +108,23 @@
           </div>
 
           <div class="card">
-            <img src="./assets/images/01.jpg" alt="" />
+
+            <div class="container">
+              <div class="images">
+                <div class="img-1"></div>
+                <div class="img-2"></div>
+              </div>
+            </div>
+
+            <div class="slider">
+              <div class="drag-line">
+                <span></span>
+              </div>
+
+              <input type="range" min="0" max="100" value="50">
+            </div>
+
+
             <h3>Micropigmentação Capilar nas entradas</h3>
             <p>
               Com a Micropigmentação você não precisará mais se preocupar
@@ -254,7 +270,35 @@
         </div>
       </div>
 
-      <div class="col-b">
+      <div class="col-b// não é um numero  =  num
+      // divisilvel por 3 &  5  = fizzBUzz
+      // divisivel por 3 = fizz
+      // divisivel por 5  = buzz
+      // não divisilvel  = num
+      
+      const numero = 5
+      function fizzBUzz() {
+        if (typeof numero != 'number') {
+          return console.log('Não é um numero')
+        }
+        if (numero === 0) {
+          return console.log('valor invalido')
+        }
+        if (numero % 3 === 0 && numero % 5 === 0) {
+          return console.log('FizzBUzz')
+        }
+        if (numero % 3 === 0) {
+          return console.log('Fizz')
+        }
+        if (numero % 5 === 0) {
+          return console.log('BUzz')
+        } else {
+          console.log(numero)
+        }
+      }
+      
+      fizzBUzz()
+      ">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.6415174062004!2d-46.76563178501307!3d-23.688774584619857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5215f2824547%3A0x9b8141f3039a8467!2sRonaldeira%20Gustaveira!5e0!3m2!1spt-BR!2sbr!4v1657590488035!5m2!1spt-BR!2sbr"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -268,7 +312,8 @@
 
   <footer>
     <div class="wrapper">
-      <div class="col-a"><a href=""></a>
+      <div class="col-a">
+        <a class="logo" href="#home">Ronaldo<span>Micro</span> </a>
         <p>
           @2022 RonaldoMicroCapilar. <br>
           Todos os direitos reservados.
@@ -277,8 +322,10 @@
       </div>
       <div class="col-b">
         <ul>
-          <li><a href=""><img src="./assets/images/icon/insta.svg" alt=""></a></li>
-          <li><a href=""><img src="./assets/images/icon/face.svg" alt=""></a></li>
+          <li><a href="https://www.instagram.com/ronaldo_micro_capilar/" target="_blank"><img
+                src="./assets/images/icon/insta.svg" alt=""></a></li>
+          <li><a href="https://www.facebook.com/ronaldo.antonio.73307634" target="_blank"><img
+                src="./assets/images/icon/face.svg" alt=""></a></li>
           <li>
             <a href="">
               <svg width="23" height="23" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

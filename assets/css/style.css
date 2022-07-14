@@ -195,9 +195,8 @@ a {
   background-color: #ffffff;
 }
 
-.card img {
-  height: 35rem;
-  border-radius: 0.8rem;
+.container{
+  
 }
 .card h3 {
   text-align: left;
@@ -342,7 +341,7 @@ footer {
 
 footer p {
   line-height: 200%;
-  margin-bottom: 3rem;
+  margin-block: 3rem;
 }
 
 footer ul {
@@ -353,4 +352,13 @@ footer ul {
 
 footer ul li img {
   width: 23px;
+}
+
+footer .logo{
+  color: white;
+  font-size: 3.5rem;
+}
+
+.logo span{
+  font-weight: bold;
 }
