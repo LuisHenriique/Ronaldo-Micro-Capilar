@@ -348,6 +348,7 @@ footer p {
 footer ul {
   display: flex;
   gap: 3.2rem;
+  margin-left: 3px;
 }
 
 footer ul li img {
