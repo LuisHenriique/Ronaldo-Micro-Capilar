@@ -51,6 +51,7 @@ section header h1 {
   color: var(--headline);
   line-height: 130%;
   margin-bottom: 2.4rem;
+  color: white;
 }
 
 section header h2 {
@@ -189,18 +190,14 @@ a {
 .card {
   display: flex;
   flex-direction: column;
-  border: 1px solid #dce9e2;
-  border-radius: 0.8rem;
   padding: 2rem;
   background-color: #ffffff;
 }
 
-.container {
-}
 .card h3 {
   text-align: left;
   margin-block: 1rem;
-  color: var(--titles-h4);
+  color: var(--titles);
 }
 .card p {
   text-align: left;
@@ -246,9 +243,8 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   padding-top: 2rem;
-  border-radius: 0.8rem;
   border-top: 15px solid var(--blueGet);
   line-height: 150%;
   color: var(--paragraph);
@@ -268,7 +264,7 @@ a {
 .estrela img {
   object-position: 0px -20px;
   width: 8rem;
-  filter: brightness(75%);
+  filter: brightness(90%);
 }
 
 /*SOBRE*/
@@ -286,10 +282,6 @@ a {
   color: var(--paragraph);
 }
 
-#about img {
-  border-radius: 0.8rem;
-  height: 33rem;
-}
 
 /*LOCALIZAÇÃO*/
 #contact {
@@ -325,7 +317,6 @@ a {
 iframe {
   width: 100%;
   height: 35rem;
-  border-radius: 0.8rem;
   margin-bottom: 4rem;
 }
 
