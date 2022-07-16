@@ -12,4 +12,4 @@ function carrousel() {
   imgs.style.transform = `translateX(${-carrouselIndex * 100}%)`
 }
 
-setInterval(carrousel, 1850)
+setInterval(carrousel, 3000)
