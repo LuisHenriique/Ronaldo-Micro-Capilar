@@ -11,6 +11,6 @@
 }
 
 .images {
-  width: 41.2rem;
+  width: 100%;
   object-fit: cover;
 }
