@@ -390,7 +390,7 @@ footer .logo {
   top: 50%;
   transform: translateY(-50%);
   font-size: 3rem;
-
+  background: none;
   z-index: 2;
   color: white;
   cursor: pointer;
