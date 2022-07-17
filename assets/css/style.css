@@ -181,17 +181,17 @@ a {
 
 #services .cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 3rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  background-color: #ffffff;
+  background-color: #ffff;
 }
 
 .card h3 {
@@ -350,4 +350,65 @@ footer .logo {
 
 .logo span {
   font-weight: bold;
+}
+
+/*CARROUSEL*/
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.slide[data-active] {
+  opacity: 1;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+
+  z-index: 2;
+  color: white;
+  cursor: pointer;
+  padding-inline: 0.5rem;
+  padding-bottom: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
 }

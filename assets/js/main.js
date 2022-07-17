@@ -1,15 +1,22 @@
-const imgs = document.querySelector('#img')
-const images = document.querySelectorAll('.images')
+const buttons = document.querySelectorAll('[data-carousel-button]')
 
-let carrouselIndex = 0
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const offset = button.dataset.carouselButton === 'next' ? 1 : -1
 
-function carrousel() {
-  carrouselIndex++
+    const slides = button
+      .closest('[data-carousel]')
+      .querySelector('[data-slides')
 
-  if (carrouselIndex > images.length - 1) {
-    carrouselIndex = 0
-  }
-  imgs.style.transform = `translateX(${-carrouselIndex * 100}%)`
-}
+    const activeSlide = slides.querySelector('[data-active]')
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset
 
-setInterval(carrousel, 3000)
+    if (newIndex < 0) newIndex = slides.children.length - 1
+
+    if (newIndex >= slides.children.length) newIndex = 0
+
+    slides.children[newIndex].dataset.active = true
+
+    delete activeSlide.dataset.active
+  })
+})
