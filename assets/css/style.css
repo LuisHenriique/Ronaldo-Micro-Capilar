@@ -181,10 +181,10 @@ a {
 
 #services .cards {
   display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .card {
@@ -369,6 +369,8 @@ footer .logo {
   position: absolute;
   inset: 0;
   opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
 }
 .slide > img {
   display: block;
@@ -379,6 +381,8 @@ footer .logo {
 }
 .slide[data-active] {
   opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
 }
 
 .carousel-button {
