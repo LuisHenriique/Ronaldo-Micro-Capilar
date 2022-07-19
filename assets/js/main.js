@@ -68,4 +68,3 @@ const mobileNavBar = new MobileNavBar(
   '.nav-list li'
 )
 mobileNavBar.init()
-

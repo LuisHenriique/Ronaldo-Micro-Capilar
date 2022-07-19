@@ -49,10 +49,9 @@ img {
 
 section header h1 {
   font-size: 3.3rem;
-  color: var(--headline);
+  color: var(--titles);
   line-height: 130%;
   margin-bottom: 2.4rem;
-  color: white;
 }
 
 section header h2 {
@@ -63,8 +62,8 @@ section header h2 {
 }
 
 section {
-  padding-block: 5rem;
-  padding-bottom: 6rem;
+  padding-top: calc(var(--nav-height) + 1rem);
+  padding-bottom: 7.2rem;
 }
 
 section header h4 {
@@ -125,7 +124,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 8rem;
+  height: 7.2rem;
   background-color: var(--blueGet);
   width: 100%;
   gap: 8rem;
@@ -175,16 +174,9 @@ nav a {
   display: none;
 }
 /*HOME*/
-#home::before {
-  content: '';
-  width: 100%;
-  height: calc(90rem + var(--nav-height));
+#home{
   background-color: var(--background-gray);
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  padding-block: 10rem;
 }
 
 #home p {
@@ -202,41 +194,13 @@ nav a {
 #home img {
   display: flex;
   justify-content: center;
-  width: 95%;
   margin-inline: auto;
-  user-select: none;
   object-position: 0px 0px;
 }
 #home h4 {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
-.stat {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--background-green);
-  border: 1px solid #dce9e2;
-  border-radius: 0.6rem;
-  width: 100%;
-  padding-block: 3.5rem;
-  padding-inline: 1rem;
-  margin-inline: auto;
-  text-align: center;
-}
-
-.stat h2 {
-  color: #243e63;
-  text-transform: uppercase;
-  margin-bottom: 1.8rem;
-}
-
-.stat p {
-  line-height: 150%;
-  color: var(--paragraph);
-  margin-bottom: 1rem;
-}
 /*SERVICES*/
 
 #services .cards {
@@ -485,16 +449,17 @@ footer .logo {
 @media (max-width: 999px) {
   .nav-list {
     position: absolute;
-    top: 8rem;
+    top: 7.2rem;
     right: 0;
-    width: 50%;
-    height: 92vh;
+    width: 50vw;
+    height: 92.8vh;
     background: #00a3ac;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+    padding-top: 3rem;
   }
   .nav-list.active {
     transform: translateX(0%);
@@ -525,6 +490,18 @@ footer .logo {
 
   nav .button {
     display: flex;
+    max-width: 80%;
+    padding: 1.32rem;
+    color: var(--blueGet);
+    background-color: #fff;
+    border: 0;
+  }
+
+  nav .button:hover {
+    background-color: var(--blueGet);
+    filter: brightness(1.2);
+    transition: 300ms;
+    color: white;
   }
 
   nav .button2 {
@@ -541,5 +518,66 @@ footer .logo {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (min-width: 1000px) {
+  .wrapper {
+    width: min(112rem, 100%);
+    display: grid;
+  }
+
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+
+
+
+  #home .wrapper {
+    grid-template-columns: 60.5rem 1fr;
+    grid-template-areas:
+      'A B'
+      'C C';
+  }
+  #home .col-a {
+    text-align: left;
+    align-self: center;
+  }
+
+  #home {
+    padding-top: var(--nav-height);
+  }
+
+  #home h1 {
+    font-size: 5.2rem;
+  }
+  #home .content p {
+    font-size: 1.8rem;
+  }
+  #home .stats {
+    grid-area: C;
+    flex-direction: row;
+    padding: 6rem;
+    gap: 0;
+  }
+
+  #home .button {
+    margin: 0;
+  }
+
+  #home img {
+    width: 42rem;
+    height: 42rem;
+  }
+
+  #home h1 {
+    font-size: 5.2rem;
+  }
+  #home .content p {
+    font-size: 1.8rem;
   }
 }
