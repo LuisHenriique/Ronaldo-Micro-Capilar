@@ -94,3 +94,14 @@ ScrollReveal({
 footer,
 footer p,
 footer .socialLinks`)
+
+const BackToTopButton = document.querySelector('#BackToTopButton')
+
+function scrollReturnTop() {
+  const positionY = scrollY
+  positionY > 400
+    ? BackToTopButton.classList.add('show')
+    : BackToTopButton.classList.remove('show')
+}
+
+document.addEventListener('scroll', scrollReturnTop)

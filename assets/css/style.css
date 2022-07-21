@@ -465,6 +465,28 @@ footer .logo {
   font-weight: bold;
 }
 
+/*BackToTopButton*/
+
+#BackToTopButton {
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+
+  transition: all 500ms;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0%);
+}
+
+#BackToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(100%);
+
+
+}
+
 /*MEDIA MOBILE*/
 
 @media (max-width: 999px) {
