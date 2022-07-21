@@ -188,6 +188,7 @@ nav a {
 #home {
   background-color: var(--background-gray);
   padding-block: 10rem;
+  position: relative;
 }
 
 #home p {
@@ -203,13 +204,19 @@ nav a {
 }
 
 #home img {
-  display: flex;
-  justify-content: center;
+  position: absolute;
   margin-inline: auto;
-  object-position: 0px 0px;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  width: min(32rem, 100%);
+}
+
+#home .button {
+  margin-bottom: 20rem;
 }
 #home h4 {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 /*SERVICES*/
@@ -483,8 +490,6 @@ footer .logo {
   opacity: 1;
   visibility: visible;
   transform: translateY(100%);
-
-
 }
 
 /*MEDIA MOBILE*/

@@ -29,15 +29,21 @@
   /*HOME*/
 
   #home .wrapper {
-    grid-template-columns: 60.5rem 1fr;
+    grid-template-columns: 55rem 1fr;
     grid-template-areas:
-      'A B'
-      'C C';
+      'A B';
+    
   }
   #home .col-a {
     text-align: left;
     align-self: center;
   }
+
+  #home .col-b {
+    text-align: left;
+    margin-inline:auto ;
+  }
+
 
   #home {
     padding-top: var(--nav-height);
@@ -49,20 +55,20 @@
   #home .content p {
     font-size: 1.8rem;
   }
-  #home .stats {
-    grid-area: C;
-    flex-direction: row;
-    padding: 6rem;
-    gap: 0;
-  }
+
 
   #home .button {
     margin: 0;
   }
 
+
+
   #home img {
-    width: 42rem;
-    height: 42rem;
+    position: absolute;
+    margin-inline: none;
+    bottom: -1px;
+  left: 520px;
+    width: min(45%, 60rem);
   }
 
   #home h1 {
