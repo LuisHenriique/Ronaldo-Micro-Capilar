@@ -381,6 +381,7 @@ nav a {
   display: flex;
   flex-direction: column-reverse;
   gap: 4rem;
+  text-align: left;
 }
 
 #about .content p {
