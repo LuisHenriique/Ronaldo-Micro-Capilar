@@ -1,0 +1,126 @@
+@media (min-width: 1000px) {
+  /*GERAL*/
+  .wrapper {
+    width: min(112rem, 100%);
+    display: grid;
+  }
+
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+
+  /*HOME*/
+
+  #home .wrapper {
+    grid-template-columns: 60.5rem 1fr;
+    grid-template-areas:
+      'A B'
+      'C C';
+  }
+  #home .col-a {
+    text-align: left;
+    align-self: center;
+  }
+
+  #home {
+    padding-top: var(--nav-height);
+  }
+
+  #home h1 {
+    font-size: 5.2rem;
+  }
+  #home .content p {
+    font-size: 1.8rem;
+  }
+  #home .stats {
+    grid-area: C;
+    flex-direction: row;
+    padding: 6rem;
+    gap: 0;
+  }
+
+  #home .button {
+    margin: 0;
+  }
+
+  #home img {
+    width: 42rem;
+    height: 42rem;
+  }
+
+  #home h1 {
+    font-size: 5.2rem;
+  }
+  #home .content p {
+    font-size: 1.8rem;
+  }
+
+  /*SERVICES*/
+
+  #services h2 {
+    width: 47rem;
+    margin-inline: auto;
+  }
+
+  #services .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+  #services .card {
+    width: 30%;
+  }
+
+  /*DEPÓIMENTOS*/
+
+  #depositions .feedbacks {
+    flex-direction: row;
+  }
+
+  /*SOBRE*/
+
+  #about .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
+    text-align: left;
+  }
+
+  
+  #about .col-b {
+    align-self: center;
+  }
+  #about .col-a  {
+margin-top: 5rem;
+  }
+
+ #about img{
+  height: 40rem;
+ }
+
+ /*CONTATO*/
+
+ #contact .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 57.5rem;
+  grid-template-areas: 'A B';
+  gap: 14.1rem;
+}
+
+
+/*RODAPÉ*/
+footer {
+  padding-block: 8rem;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+}
