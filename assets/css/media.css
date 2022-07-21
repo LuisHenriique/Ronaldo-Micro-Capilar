@@ -13,6 +13,19 @@
     grid-area: B;
   }
 
+  /*NAV*/
+  nav .nav-list li a::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    display: block;
+    transition: width 0.3s;
+  }
+
+  nav .nav-list li a:hover::after {
+    width: 100%;
+  }
   /*HOME*/
 
   #home .wrapper {
@@ -91,36 +104,34 @@
     text-align: left;
   }
 
-  
   #about .col-b {
     align-self: center;
   }
-  #about .col-a  {
-margin-top: 5rem;
+  #about .col-a {
+    margin-top: 5rem;
   }
 
- #about img{
-  height: 40rem;
- }
+  #about img {
+    height: 40rem;
+  }
 
- /*CONTATO*/
+  /*CONTATO*/
 
- #contact .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 57.5rem;
-  grid-template-areas: 'A B';
-  gap: 14.1rem;
-}
+  #contact .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 57.5rem;
+    grid-template-areas: 'A B';
+    gap: 14.1rem;
+  }
 
+  /*RODAPÉ*/
+  footer {
+    padding-block: 8rem;
+  }
 
-/*RODAPÉ*/
-footer {
-  padding-block: 8rem;
-}
-
-footer .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

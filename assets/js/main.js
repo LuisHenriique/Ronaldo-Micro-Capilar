@@ -68,3 +68,29 @@ const mobileNavBar = new MobileNavBar(
   '.nav-list li'
 )
 mobileNavBar.init()
+
+//ScrollReaveal
+
+ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 800
+}).reveal(`
+#home,
+#home img, 
+#home .stats, 
+#services, 
+#services header,
+#services .card,
+#depositions,
+#depositions header,
+#depositions .content,
+#about,
+#about header,
+#about .content,
+#contact,
+#contact header,
+#contact .content,
+footer,
+footer p,
+footer .socialLinks`)
